@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color, #ffffff);
+  color: var(--text-color, #202124);
+}
+
+code {
+  font-family: 'Courier New', monospace;
+  background-color: var(--code-bg, #f1f3f4);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  border: 1px solid var(--code-border, #dadce0);
+}
+
+/* CSS Variables for theming */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #202124;
+  --text-light: #5f6368;
+  --code-bg: #f1f3f4;
+  --code-border: #dadce0;
+  --primary-color: #0f9d58;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --text-light: #b0b0b0;
+  --code-bg: #2a2a2a;
+  --code-border: #404040;
+  --primary-color: #1dd1a1;
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
